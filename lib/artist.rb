@@ -12,6 +12,7 @@ class Artist
 
   def save
     @@all << self
+    @@all
   end
 
   def add_song(song)
