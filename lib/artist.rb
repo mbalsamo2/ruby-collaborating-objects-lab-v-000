@@ -2,7 +2,6 @@ require 'pry'
 
 class Artist
   attr_accessor :name, :songs
-  attr_reader :all
 
   @@all = []
 
@@ -13,7 +12,6 @@ class Artist
 
   def save
     @@all << self
-    @@all
   end
 
   def add_song(song)
@@ -27,6 +25,10 @@ class Artist
 
   def print_songs
     @songs
+  end
+
+  def all
+    @@all
   end
 
 end
